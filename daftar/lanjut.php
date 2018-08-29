@@ -88,6 +88,7 @@ if(isset($_GET['er'])){
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<link rel="stylesheet" href="../assets/css/notif.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+<<<<<<< HEAD
 		
 		<style type="text/css">
 			.no-js #loader { display: none;  }
@@ -103,6 +104,8 @@ if(isset($_GET['er'])){
 				opacity: 0.7;
 			}
 		</style>
+=======
+>>>>>>> 62780d854b42ca8da3f727dbdc3a67869998d82f
 	</head>
 	<body>
 
@@ -134,7 +137,10 @@ if(isset($_GET['er'])){
 				<div class="container">
 					<section>
 						<h4>Bergabung Bersama Puluhan Ribu Anggota SuksesFamily Indonesia</h4>
+<<<<<<< HEAD
 						<div class="pageLoader"></div>
+=======
+>>>>>>> 62780d854b42ca8da3f727dbdc3a67869998d82f
 						<?php echo $notife; ?>
 						<div class="box alt">
 							<div class="row 50% uniform">
@@ -166,10 +172,17 @@ if(isset($_GET['er'])){
 							<input type="hidden" name="admin" value="<?php echo $no_admin; ?>"/>
 							<input type="hidden" name="ref" value="<?php echo $ref; ?>"/>
 							<div class="row uniform">
+<<<<<<< HEAD
 								 <div class="6u 12u(xsmall)">
 								 	<div class="select-wrapper">
 								 		<select name="negara">
 											<option value="">- Negara Tinggal -</option>
+=======
+								 <div class="4u 12u(xsmall)">
+								 	<div class="select-wrapper">
+								 		<select name="negara">
+											<option value="neg">- Negara Tinggal -</option>
+>>>>>>> 62780d854b42ca8da3f727dbdc3a67869998d82f
 											<?php
 											$QryPrm = mysqli_query($con,"select * FROM parameter WHERE param1='nomor' order by param2 asc");
 											while ($data=mysqli_fetch_array($QryPrm)){
@@ -179,6 +192,7 @@ if(isset($_GET['er'])){
 								 		</select>
 								 	</div>
 								 </div>
+<<<<<<< HEAD
 								 <div class="6u 12u(xsmall)">
 										<input type="text" name="nope"  value="" placeholder="No WhatsApp 0812xxx" />
 								 </div>
@@ -194,10 +208,25 @@ if(isset($_GET['er'])){
 												while ($dataJen=mysqli_fetch_array($QryJenis)){
 													echo "<option value='".$dataJen['param2']."'>".$dataJen['nama']."</option>";
 												}
+=======
+								 <div class="4u 12u(xsmall)">
+										<input type="text" name="nope"  value="" placeholder="No WhatsApp 0812xxx" />
+								 </div>
+								<div class="4u 12u(xsmall)">
+									<div class="select-wrapper">
+										<select name="angg">
+											<option value="no">- Pilih Keanggotaan -</option>
+											<?php
+											$QryPrm = mysqli_query($con,"select * FROM parameter WHERE param1='harga' and param2=(select mlm_type from pengguna where username='$ref')");
+											while ($data=mysqli_fetch_array($QryPrm)){
+											echo "<option value='".$data[nama]."'>".$data[param3]." ".rp($data[nama])."</option>";
+											}
+>>>>>>> 62780d854b42ca8da3f727dbdc3a67869998d82f
 											?>
 										</select>
 									</div>
 								</div>
+<<<<<<< HEAD
 								<div class="6u 12u(xsmall)">
 									<div class="select-wrapper">
 										<select required id="angg" name="angg">
@@ -212,6 +241,13 @@ if(isset($_GET['er'])){
 									<input type="text" name="vp" value="" placeholder="ID Paytren" />
 								</div>
 								<div class="6u 12u(xsmall)">
+=======
+								<div class="row uniform">
+									<div class="6u 12u(xsmall)">
+										<input type="text" name="vp" value="" placeholder="ID Paytren" />
+									</div>
+									<div class="6u 12u(xsmall)">
+>>>>>>> 62780d854b42ca8da3f727dbdc3a67869998d82f
 										<div class="select-wrapper">
 											<select name="jaguar" >
 												<option value="">- Tim Jaguar ? -</option>
@@ -256,8 +292,11 @@ if(isset($_GET['er'])){
 			</div>
 
 		<!-- Scripts -->
+<<<<<<< HEAD
 			<script src="../assets/js/jquery-3.3.1.min.js"></script>
 			<script src="../assets/js/bootstrap.min.js"></script>
+=======
+>>>>>>> 62780d854b42ca8da3f727dbdc3a67869998d82f
 			<script src="../assets/js/jquery.min.js"></script>
 			<script src="../assets/js/jquery.scrollzer.min.js"></script>
 			<script src="../assets/js/jquery.scrolly.min.js"></script>
@@ -265,6 +304,7 @@ if(isset($_GET['er'])){
 			<script src="../assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="../assets/js/main.js"></script>
+<<<<<<< HEAD
 			
 
 
@@ -275,6 +315,12 @@ if(isset($_GET['er'])){
 				$('.pageLoader').attr('style','display:none');
 			}, 700);
 			
+=======
+
+		<script>
+		$(document).ready(function() {
+
+>>>>>>> 62780d854b42ca8da3f727dbdc3a67869998d82f
 			$('.row input').keyup(function() {
 
 	        var empty = false;
@@ -289,6 +335,7 @@ if(isset($_GET['er'])){
 	        } else {
 	            $('.actions input').removeAttr('disabled');
 	        }
+<<<<<<< HEAD
 			});
 		});
 		
@@ -323,4 +370,43 @@ if(isset($_GET['er'])){
 		}
 		</script>
 		
+=======
+	    });
+/*
+			$('#tipe').bind('change click keyup', function() {
+				$('#tipex').val($('#tipe option:selected').text());
+			});
+			$('#angg').bind('change click keyup', function() {
+				$('#anggx').val($('#angg option:selected').text());
+
+				var empty = false;
+				$('.row input').each(function() {
+						if ($(this).val().length == 0) {
+								empty = true;
+						}
+				});
+
+				if (empty) {
+						$('.actions input').attr('disabled', 'disabled');
+				} else {
+						$('.actions input').removeAttr('disabled');
+				}
+			});
+*/
+			/*
+			$("#tipe").change(function() {
+				var ambil = $(this).attr("value");
+				$.ajax({
+					type : "GET",
+					url : "lanjut.php",
+					data : ambil
+				}).done(function(data) {
+					$("#dapet").val(data);
+				});
+			});
+			*/
+	});
+		</script>
+	</body>
+>>>>>>> 62780d854b42ca8da3f727dbdc3a67869998d82f
 </html>

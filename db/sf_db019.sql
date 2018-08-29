@@ -3,7 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
+<<<<<<< HEAD
 -- Generation Time: Aug 28, 2018 at 09:37 PM
+=======
+-- Generation Time: Aug 26, 2018 at 11:16 PM
+>>>>>>> 62780d854b42ca8da3f727dbdc3a67869998d82f
 -- Server version: 5.7.19
 -- PHP Version: 7.1.10
 
@@ -1715,8 +1719,12 @@ INSERT INTO `pengguna` (`id_fb`, `nama_dpn`, `nama_blk`, `nama_fb`, `no_wa`, `ge
 ('2566380030054995', 'Donny', 'Belliandy', 'Belliandy Donny', '081393335967', 'male', NULL, '2018-12-01 03:34:16', 99000, '2018-06-01 15:34:16', 'donny', 'TN1091483', 'bukan', 'zakirin', 'tidak', NULL, NULL, 1555, 'AAA077AAC', 'Huruf', '2', 'pyt'),
 ('2077797995837042', 'Iswandi', 'M insya', 'Iswandi', '0895602182270', 'male', NULL, '2019-06-02 03:56:18', 175000, '2018-06-02 03:56:18', 'iswandi', 'TN0952599', 'ya', 'ressianan', 'tidak', NULL, NULL, 1556, 'AAA001AAC005AAA003AAA006AAB', 'Huruf', '8', 'pyt'),
 ('123456789012325', 'lele', 'lele', 'Lele', '+9055111111110', 'Male', 'Jun', '2019-01-22 09:41:01', 90000, '2018-07-21 19:41:01', 'lele', '7272', 'bukan', 'a', 'tidak', NULL, '2018-07-21', 1560, 'AAA155AAH', 'Huruf', '2', 'pyt'),
+<<<<<<< HEAD
 ('123456789012332', 'minka', 'Minka', 'minka', '+61412345678', 'Female', 'Jun', '2019-02-27 01:13:36', 90000, '2018-08-26 23:13:36', 'minka', '9811', 'bukan', 'a', 'tidak', NULL, '2018-08-26', 1561, 'AAA155AAI', 'Huruf', '2', 'pyt'),
 ('123456789012333', 'juna', 'juna', 'juna', '+6289671762352', 'Male', 'Jun', '2019-03-01 11:25:37', 80000, '2018-08-28 21:25:37', 'juna', '1234', 'bukan', 'a', 'tidak', NULL, '2018-08-28', 1562, 'AAA155AAJ', 'Huruf', '2', 'eco');
+=======
+('123456789012332', 'minka', 'Minka', 'minka', '+61412345678', 'Female', 'Jun', '2019-02-27 01:13:36', 90000, '2018-08-26 23:13:36', 'minka', '9811', 'bukan', 'a', 'tidak', NULL, '2018-08-26', 1561, 'AAA155AAI', 'Huruf', '2', 'pyt');
+>>>>>>> 62780d854b42ca8da3f727dbdc3a67869998d82f
 
 --
 -- Indexes for dumped tables
@@ -1772,7 +1780,11 @@ ALTER TABLE `pendaftar`
 -- AUTO_INCREMENT for table `pengguna`
 --
 ALTER TABLE `pengguna`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1563;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1562;
+>>>>>>> 62780d854b42ca8da3f727dbdc3a67869998d82f
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
